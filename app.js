@@ -10,6 +10,7 @@ const SPData = require('./routes/sub-page');
 const MWData = require('./routes/MEN-woMEN');
 const PYData = require('./routes/pay-demo');
 const TRData = require('./routes/training-demo');
+const PMData = require('./routes/paid-men');
 
 //app.use(bodyparser.urlencoded({extended: false})); 
 
@@ -18,6 +19,7 @@ app.use(SPData);
 app.use(MWData);
 app.use(PYData);
 app.use(TRData);
+app.use(PMData);
 app.use(express.static(path.join(__dirname,'public')));
 
 app.use((req, res, next) => {
